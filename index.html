@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>Ingress Mission Icon Generator</title>
+    <meta name="description" content="[非公式]Ingressミッションのメダルを誰でもかんたんに作成 / (Unofficial)Easily create a Ingress Mission Medal anyone">
+    <meta name="author" content="Noriaki Uchiyama (Agent: @TriStation)">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/overwrite.css">
+    <!--[if lt IE 9]>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <!--<link rel="shortcut icon" href="">-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ingress Mission Icon Generator"/>
+    <meta property="og:description" content="[非公式]Ingressミッションのメダルを誰でもかんたんに作成 / (Unofficial)Easily create a Ingress Mission Medal anyone" />
+    <meta property="og:image" content="http://mission-icon-generator.ingress.tools/img/ingress-mission-icon-generator.png" />
+    <meta property="og:url" content="http://mission-icon-generator.ingress.tools/" />
+    <meta property="og:site_name" content="Ingress Mission Icon Generator"/>
+    <meta content="summary" name="twitter:card" />
+    <meta content="@noriaki" name="twitter:site" />
+  </head>
+  <body>
+    <div class="container" rome="main">
+      <div class="jumbotron">
+        <header>
+          <h1>Ingress Mission Icon Generator</h1>
+          <p>Glyph hack, Save as icon image.<br>Enjoy glyph-hacking and Ingress!!</p>
+        </header>
+      </div>
+      <div class="well">
+        <div class="row">
+          <div id="stage_container" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 text-center">
+            <canvas id="stage" width="640" height="640"></canvas>
+          </div>
+          <div id="tool_container" class="col-xs-12 col-sm-12 col-md-12 col-lg-4 text-center">
+            <div id="loader" class="disp-none">
+              <span class="glyphicon glyphicon-refresh spin-animate"></span>Generating...
+            </div>
+            <div id="icons" class="disp-none">
+              <h5>Previews</h5>
+              <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <h6>Logo</h6>
+                  <!--<img id="icon_thumb" src="" class="img-thumbnail">-->
+                  <img id="icon_thumb" src="">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <h6>Medal</h6>
+                  <img id="icon_thumb_circle" src="" class="img-circle">
+                </div>
+              </div>
+              <div id="download_container">
+                <button id="download" class="btn btn-primary btn-block">
+                  Mission icon Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p class="text-center">
+          Copylight 2015
+          <a href="https://www.facebook.com/noriaki.uchiyama">Noriaki Uchiyama</a>
+          (Agent: <a href="https://plus.google.com/113883896593687296420">@TriStation</a>)
+        </p>
+      </footer>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="glyph-hack-canvas/js/toBlob/canvas-toBlob.js"></script>
+    <script src="glyph-hack-canvas/js/file-save/FileSaver.min.js"></script>
+    <script src="glyph-hack-canvas/js/jcanvas/jcanvas.min.js"></script>
+    <script src="glyph-hack-canvas/js/jquery-class/jquery.class.min.js"></script>
+    <script src="glyph-hack-canvas/js/glyph-hack-canvas.js"></script>
+    <script src="js/ingress-mission-icon.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+.jumbotron { margin-top: 10px; }
+.disp-none { display: none; }
+
+#stage {
+  border: 1px solid #5afbea;
+}
+#loader .spin-animate {
+  margin-right: 0.5em;
+  -animation: spin 1s infinite linear;
+  -ms-animation: spin 1s infinite linear;
+  -webkit-animation: spinw 1s infinite linear;
+  -moz-animation: spinm 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+@-webkit-keyframes spinw {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spinm {
+    from { -moz-transform: rotate(0deg);}
+    to { -moz-transform: rotate(360deg);}
+}
+
+#icons img {
+  width: 100%;
+}
+#icon_thumb_circle {
+  border: 2px solid #ffae38;
+}
+
+#download_container {
+  margin: 20px 0;
+}
