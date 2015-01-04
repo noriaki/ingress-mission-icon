@@ -1,5 +1,6 @@
 .jumbotron { margin-top: 10px; }
 .disp-none { display: none; }
+.note { font-size: 0.85em; }
 
 #stage {
   border: 1px solid #5afbea;
