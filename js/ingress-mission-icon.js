@@ -21,9 +21,11 @@ jQuery(function($) {
                 .find('#loader').fadeOut('fast').end()
                 .find('#icons').delay(100).slideDown('fast');
         }, 1500);
+        ga('send', 'event', 'glyph', 'hacked');
     });
 
     $('#download').on('click', function(e) {
         $.stage.stage.saveAs('mission-icon.png');
+        ga('send', 'event', 'glyph', 'download');
     });
 });
